@@ -6,42 +6,50 @@
     <title>Nardos Amakele</title>
     <link rel="icon" type="image/x-icon" href="/UGR-6957-14/src/images/mylogo.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
-<body>
-    <header>
-        <img src="/UGR-6957-14/src/images/mylogo.jpg" alt="LOGO" width="70" height="70">
-        <h2>Nardos Amakele</h2>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="others.html">Others</a></li>
-                <li><a href="contact.html">Contact</a></li>
+<body class="bg-blue-900">
+    <header class="flex items-center justify-between px-6 py-4">
+        <div class="flex items-center">
+            <img src="../src/images/mylogo.jpg" alt="LOGO" width="70" height="70">
+            <h2 class="ml-2 text-xl font-bold text-white font-serif">Nardos Amakele</h2>
+        </div>
+        <nav id="menu" class="hidden md:block">
+            <ul  class="flex flex-col md:flex-row space-y-2 md:space-x-4 text-pink-300 text-lg mr-2 ">
+                <li class="hover:bg-white hover:text-black p-2 mt-2"><a href="home.html">Home</a></li>
+                <li class="hover:bg-white hover:text-black p-2"><a href="about.html">About</a></li>
+                <li class="hover:bg-white hover:text-black p-2"><a href="skills.html">Skills</a></li>
+                <li class="hover:bg-white hover:text-black p-2"><a href="others.html">Others</a></li>
+                <li class="hover:bg-white hover:text-black p-2"><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <i class="fa fa-bars"></i>
+        </button>
     </header>
-    <main>
-        <!--has a background image-->
+    <main class="text-center text-white">
         <section class="top">
-            <h1>Welcome, I'm Nardos</h1>
-            <h3>Software Engineer and Web Developer</h3>
+            <h1 class="text-4xl font-bold font-sans">Welcome, I'm Nardos</h1>
+            <h3 class="text-2xl font-bold font-sans">Software Engineer and Web Developer</h3>
         </section>
-        <section class="bottom">
+        <div class="flex justify-center">
+            <img src="../src/images/photo_2023-12-01_02-49-52.jpg" class="w-80 h-80">
+        </div>
+        <section class="bottom text-xl">
             <blockquote cite="https://letslearnslang.com/the-future-belongs-to-those-who-believe-in-the-beauty-of-their-dreams-by-eleanor-roosevelt/"><q>The future belongs to those who beleive in the beauty of their dreams</q></blockquote>
             <h5>by Eleanor Roosevelt</h5>
         </section>
     </main>
-    <footer>
-        <ul>
-            <li><a href="https://www.facebook.com/nardos.amakele/"  target="_blank" class="fa fa-facebook"></a></li>
-            <li><a href="https://www.instagram.com/nardosamakele/"  target="_blank" class="fa fa-instagram"></a></li>
-            <li><a href="https://www.snapchat.com/add/nardos_amakele?share_id=-AAOjmdlIyM&locale=en-GB"   target="_blank" class="fa fa-snapchat-ghost"></a></li>
-            <li><a href=" https://x.com/Imscarious?t=NXE5MJNs7088Ipez-raGEQ&s=35" target="_blank" class="fa fa-twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/nardos-amakele-792ab6278/?originalSubdomain=et"  target="_blank" class="fa fa-linkedin"></a></li>
+    <footer class="flex flex-col items-left ">
+        <ul class="flex space-x-4 ml-10">
+            <li class="bg-zinc-50 p-2 text-1xl rounded hover:bg-pink-300  hover:text-2xl "><a href="https://www.facebook.com/nardos.amakele/" target="_blank" class="fa fa-facebook"></a></li>
+            <li class="bg-zinc-50 p-2 text-1xl rounded hover:bg-pink-300  hover:text-2xl "><a href="https://www.instagram.com/nardosamakele/" target="_blank" class="fa fa-instagram"></a></li>
+            <li class="bg-zinc-50 p-2 text-1xl rounded hover:bg-pink-300  hover:text-2xl"><a href="https://www.snapchat.com/add/nardos_amakele?share_id=-AAOjmdlIyM&locale=en-GB" target="_blank" class="fa fa-snapchat-ghost"></a></li>
+            <li class="bg-zinc-50 p-2 text-1xl rounded hover:bg-pink-300  hover:text-2xl"><a href="https://x.com/Imscarious?t=NXE5MJNs7088Ipez-raGEQ&s=35" target="_blank" class="fa fa-twitter"></a></li>
+            <li class="bg-zinc-50 p-2 text-1xl rounded hover:bg-pink-300  hover:text-2xl"><a href="https://www.linkedin.com/in/nardos-amakele-792ab6278/?originalSubdomain=et" target="_blank" class="fa fa-linkedin"></a></li>
         </ul>
-        <p title="copyrights">&copy; 2023 My Website. All rights reserved.</p>
+        <p class=" text-xs text-white ml-6">&copy; 2023 My Website. All rights reserved.</p>
     </footer>
+    <script src="../src/java/script.js"></script>
 </body>
 </html>
